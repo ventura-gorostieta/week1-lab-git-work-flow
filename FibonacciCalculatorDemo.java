@@ -3,28 +3,28 @@ import java.util.Map;
 
 public class FibonacciCalculatorDemo {
 
-    private Map<Integer, Long> memoizationCache;
+      public long fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
 
-    public FibonacciCalculatorDemo() {
-        this.memoizationCache = new HashMap<>();
-        this.memoizationCache.put(0, 0L);
-        this.memoizationCache.put(1, 1L);
-    }
+        long[] fibArray = new long[n + 1];
+        fibArray[0] = 0;
+        fibArray[1] = 1;
 
-    public long fibonacci(int n) {
+        for (int i = 2; i <= n; i++) {
+            fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+        }
 
-        return memoizationCache.computeIfAbsent(
-                n, key -> fibonacci(key - 1)
-                        + fibonacci(key - 2));
+        return fibArray[n];
     }
 
     public static void main(String[] args) {
         FibonacciCalculatorDemo calculator = new FibonacciCalculatorDemo();
 
-        int n = 7;
-
-        System.out.println("La serie Fibonacci de " + n + " es: " + calculator.fibonacci(n));
-        System.out.println("Mensaje  de cierre");
+        int n = 10;
+        System.out.println("Fibonacci de " + n + " es: " + calculator.fibonacci(n));
+        System.out.println("Fibonacci de " + n + " es: " + calculator.fibonacci(n));
 
     }
 }
