@@ -27,6 +27,31 @@ r el pulll y rebase, se hace merge automatico con los cambios:
 
 <img width="766" alt="Captura de pantalla 2024-05-14 a la(s) 6 45 46 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/baa64c0f-0499-46f2-a319-bfe1a37aa96a">
 
+Finalmente se hicieron varios cambios a la clase FibonacciCalculatorDemo de tal manera  de poder forzar un conflicto al momento de hacer merge hacía develop.
+<img width="1394" alt="Captura de pantalla 2024-05-14 a la(s) 7 05 17 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/858ec540-ad74-4b2b-b230-7775c62c02ad">
+
+Conflicto:
+<img width="1299" alt="Captura de pantalla 2024-05-14 a la(s) 7 05 44 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/d13857b6-6a9d-40f7-aa95-413b052da631">
+<img width="1353" alt="Captura de pantalla 2024-05-14 a la(s) 7 05 57 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/628427dd-701b-4724-803c-10af54a5ffe6">
+
+Hago rebase de develop para poder resolver conflicto:
+<img width="738" alt="Captura de pantalla 2024-05-14 a la(s) 7 08 33 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/128aa0b9-7a62-4555-9bd4-be0db6008d23">
+
+<img width="843" alt="Captura de pantalla 2024-05-14 a la(s) 7 09 13 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/38793dd1-e71d-4170-84e0-be6ff59438cb">
+
+<img width="474" alt="Captura de pantalla 2024-05-14 a la(s) 7 09 25 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/446c97e5-fe0b-4c20-b936-135a01be0d59">
+
+
+Se resuleven conflictos y se hace push para actualizar el repositorio del que se desea fusionar a develop.
+<img width="762" alt="Captura de pantalla 2024-05-14 a la(s) 7 09 34 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/64046785-4b55-4868-95ed-2db503576f4e">
+<img width="1207" alt="Captura de pantalla 2024-05-14 a la(s) 7 09 40 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/24bfa8c9-73ac-4b11-b46c-923385039a05">
+
+<img width="1203" alt="Captura de pantalla 2024-05-14 a la(s) 7 10 01 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/2a9d34bb-c697-49a5-acae-3d6ea94ce316">
+
+Se suben los cambios al repositorio feature:
+<img width="1069" alt="Captura de pantalla 2024-05-14 a la(s) 7 14 01 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/2ace3f4b-695f-4a01-86f0-da5317eb7b91">
+
+Y de estya manera se pueden resolver conflictos utilizando rebase y merge.
 
 ## Paso 3 .
 Simulando pull request y code review.
