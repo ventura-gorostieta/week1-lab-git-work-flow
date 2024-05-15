@@ -15,8 +15,20 @@ Una vez clonado, se crear los branch para simular un trabajo de proyecto donde s
 Cabe destacar que para que esta estrategia de branch sea funciona, requiere administración y conocer tren de liberaciones de los feature en las ramas.
 <img width="644" alt="Captura de pantalla 2024-05-14 a la(s) 5 59 30 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/47df09b2-b5ea-4085-a0a6-88e3f8101fc5">
 
+## Paso 2
+Resolver conflictos y resolverlos.
+Nos situamos en la rama feature/new-feature-1, la cual se quedo atras con respecto a develop, por lo tanto se hace un rebase para jalar cambios antes de proceder con la simulación de conflictos:
 
-## Paso 2 .
+Se crea una rama donde se modificará una clase java de ejemplo, dicha será modificada con cuenta alterna para simular 2 devs.
+Al momento de hace<img width="1088" alt="Captura de pantalla 2024-05-14 a la(s) 6 44 06 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/5bc6a2c1-8f70-448a-9249-6c7c96b06e3f">
+r el pulll y rebase, se hace merge automatico con los cambios:
+![Uploading Captura de pantalla 2024-05-14 a la(s) 6.44.06 p.m..png…]()
+![Uploading Captura de pantalla 2024-05-14 a la(s) 6.44.28 p.m..png…]()
+
+<img width="766" alt="Captura de pantalla 2024-05-14 a la(s) 6 45 46 p m" src="https://github.com/ventura-gorostieta/week1-lab-git-work-flow/assets/97199485/baa64c0f-0499-46f2-a319-bfe1a37aa96a">
+
+
+## Paso 3 .
 Simulando pull request y code review.
 
 Se agrega cuenta personal git y se invita para colaborar y poder hacer "code review".
