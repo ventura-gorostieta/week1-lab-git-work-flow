@@ -1,25 +1,30 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class FibonacciCalculator {
+public class FibonacciCalculatorDemo {
 
     private Map<Integer, Long> memoizationCache;
 
-    public FibonacciCalculator() {
+    public FibonacciCalculatorDemo() {
         this.memoizationCache = new HashMap<>();
-        this.memoizationCache.put(0, 0L); // Fibonacci de 0 es 0
-        this.memoizationCache.put(1, 1L); // Fibonacci de 1 es 1
+        this.memoizationCache.put(0, 0L); 
+        this.memoizationCache.put(1, 1L); 
     }
 
     public long fibonacci(int n) {
-        return memoizationCache.computeIfAbsent(n, key -> fibonacci(key - 1) + fibonacci(key - 2));
+        
+        return memoizationCache.computeIfAbsent(
+                n, key -> fibonacci(key - 1) 
+                        + fibonacci(key - 2));
     }
 
     public static void main(String[] args) {
-        FibonacciCalculator calculator = new FibonacciCalculator();
+        FibonacciCalculatorDemo calculator = new FibonacciCalculatorDemo();
 
-        int n = 10;
+        int n = 8;
 
-        System.out.println("Fibonacci de " + n + " es: " + calculator.fibonacci(n));
+        System.out.println("La serie Fibonacci de " + n + " es: " + calculator.fibonacci(n));
+        System.out.println("Mensaje final");
+
     }
 }
